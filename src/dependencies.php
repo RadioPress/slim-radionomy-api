@@ -1,5 +1,5 @@
 <?php
-// DIC configuration
+$reader = new Zend\Config\Reader\Json();
 
 $container = $app->getContainer();
 
@@ -11,3 +11,7 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
     return $logger;
 };
+
+
+// config
+$container['config'] = $reader->fromFile(SLIM_ROOT_DIR . '/config.json');
