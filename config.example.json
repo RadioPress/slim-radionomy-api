@@ -1,9 +1,9 @@
 {
-    "radionomy_api_key": "xxx-xxx-xxx-xxx-xxx",
-    "radios": [
-        {
-            "name": "xxx radio",
-            "radioUId": "xxx-xxx-xxx-xxx-xxx"
-        }
-    ]
+	"radionomy_api_key": "xxx-xxx-xxx-xxx-xxx",
+	"radios": [
+		{
+			"name": "xxx radio",
+			"radioUId": "xxx-xxx-xxx-xxx-xxx"
+		}
+	]
 }
