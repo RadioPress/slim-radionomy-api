@@ -3,6 +3,7 @@
 	"radios": [
 		{
 			"name": "xxx radio",
+			"slug": "xxx_radio",
 			"radioUId": "xxx-xxx-xxx-xxx-xxx"
 		}
 	]

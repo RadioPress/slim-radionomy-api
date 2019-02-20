@@ -5,9 +5,17 @@ use Slim\Http\Response;
 
 // Routes
 $app->get('/', function (Request $request, Response $response, array $args) {
-	// Render index view
 	return $response->withJson([
 		'status' => 'ok',
-		'radio_name' => $this->config['radios'][0]['name']
 	]);
+});
+
+$app->get('/current_song/:slug/', function (Request $request, Response $response, array $args) {
+	$resJSON = [];
+
+	$resJSON['req'] = $request;
+	$resJSON['res'] = $response;
+	$resJSON['args'] = $args;
+
+	return $response->withJson($resJSON);
 });
